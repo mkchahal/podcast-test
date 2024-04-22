@@ -6,8 +6,8 @@ with open('feed.yaml', 'r') as file:
 
     rss_element = xml_tree.Element('rss', {
         'version': '2.0',
-        'xlmns:itunes': 'http://www.itunes.com/dtds/podcast-1.0.dtd',
-        'xlmns:content': 'http://purl.org/rss/1.0/modules/content/'
+        'xmlns:itunes': 'http://www.itunes.com/dtds/podcast-1.0.dtd',
+        'xmlns:content': 'http://purl.org/rss/1.0/modules/content/',
     })
 
     channel_element = xml_tree.SubElement(rss_element, 'channel')
